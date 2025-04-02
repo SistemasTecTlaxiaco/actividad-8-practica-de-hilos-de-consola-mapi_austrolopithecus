@@ -16,9 +16,13 @@ namespace Hilos_Corredores
             // Crear dos corredores
             Thread corredorA = new Thread(Correr);
             Thread corredorB = new Thread(Correr);
+            //INTANCIACIÓN DE UN NUEVO HILO XD  
+            Thread corredorC = new Thread(Correr);
 
             corredorA.Start("Corredor A");
             corredorB.Start("Corredor B");
+            // INICIALIZACIÓN DEL NUEVO HILO A TRAVÉS DE SU MÉTODO START
+            corredorC.Start("Corredor C");
 
             corredorA.Join();
             corredorB.Join();
