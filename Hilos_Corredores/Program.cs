@@ -11,7 +11,14 @@ namespace Hilos_Corredores
     {
         static void Main()
         {
-            //EL CÓDIGO VA AQUÍ
+            Console.WriteLine("Inicio del programa en el hilo principal.");
+
+            // Se crean tres objetos de la clase Thread, APLICANDO EL METODO 'Tarea' CON 2 ARGUMENTOS, 'id'-> nombre del hilo 
+            // 'iteraciones'-> numero de iteraciones que ejecutara el hilo 
+            Thread thread1 = new Thread(() => Tarea(1, 5));
+            Thread thread2 = new Thread(() => Tarea(2, 3));
+            Thread thread3 = new Thread(() => Tarea(3, 7));
+
         }
 
         static void Tarea(int id, int iteraciones)//METODO CON EL CUAL LOS HILOS SERÁN INICIALIZADOS
