@@ -11,36 +11,20 @@ namespace Hilos_Corredores
     {
         static void Main()
         {
-            Console.WriteLine("¡Carrera de hilos!");
-
-            // Crear dos corredores
-            Thread corredorA = new Thread(Correr);
-            Thread corredorB = new Thread(Correr);
-            //INTANCIACIÓN DE UN NUEVO HILO XD  
-            Thread corredorC = new Thread(Correr);
-
-            corredorA.Start("Corredor A");
-            corredorB.Start("Corredor B");
-            // INICIALIZACIÓN DEL NUEVO HILO A TRAVÉS DE SU MÉTODO START
-            corredorC.Start("Corredor C");
-
-            corredorA.Join();
-            corredorB.Join();
-            corredorC.Join();
-
-            Console.WriteLine("¡Carrera terminada!");
+            //EL CÓDIGO VA AQUÍ
         }
 
-        static void Correr(object nombre)
+        static void Tarea(int id, int iteraciones)//METODO CON EL CUAL LOS HILOS SERÁN INICIALIZADOS
         {
-            Random rnd = new Random();
-            for (int pasos = 1; pasos <= 10; pasos++)
+            for (int i = 1; i <= iteraciones; i++)//CICLO FOR, TIENEN COMO ARGUMENTO UNA VARIABLE iteraciones
             {
-                Console.WriteLine($"{nombre} avanzó a la posición: {pasos}");
-                Thread.Sleep(rnd.Next(100, 500)); // Velocidad aleatoria
+                Console.WriteLine($"Hilo {id}: iteración {i}");//IMPRIME EL NOMBRE (id) DEL HILO Y EL NÚMERO DE ITERACIÓN (i)
+                Thread.Sleep(1000); // Bloquea el proceso de un hilo por 1s
             }
-            Console.WriteLine($"🏁 {nombre} terminó la carrera!");
+            Console.WriteLine($"Hilo {id} ha terminado su tarea.");//AL TERMINAR LAS "i" ITERACIONES MUESTRA EL MENSAJE 
+            //QUE INDICA QUE EL HILO "id" HA TERMINADO SU TAREA
         }
+
     }
 
 }

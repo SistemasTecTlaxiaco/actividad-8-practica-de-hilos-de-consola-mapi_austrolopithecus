@@ -1,0 +1,7 @@
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\obj\Debug\Hilos_Corredores.csproj.AssemblyReference.cache
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\obj\Debug\Hilos_Corredores.csproj.CoreCompileInputs.cache
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\bin\Debug\Hilos_Corredores.exe.config
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\bin\Debug\Hilos_Corredores.exe
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\bin\Debug\Hilos_Corredores.pdb
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\obj\Debug\Hilos_Corredores.exe
+C:\Users\isaia\source\repos\actividad-8-practica-de-hilos-de-consola-mapi_austrolopithecus\Hilos_Corredores\obj\Debug\Hilos_Corredores.pdb
