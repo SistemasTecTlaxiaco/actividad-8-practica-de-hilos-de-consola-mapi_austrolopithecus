@@ -23,6 +23,14 @@ namespace Hilos_Corredores
             thread1.Start();
             thread2.Start();
             thread3.Start();
+
+            // Esperar a que los hilos terminen y bloquea el hilo principal
+            thread1.Join();
+            thread2.Join();
+            thread3.Join();
+
+            // Una vez que todos los hilos han terminado, se imprime el mensaje final
+            Console.WriteLine("Todos los hilos han terminado. Fin del programa.");
         }
 
         static void Tarea(int id, int iteraciones)//METODO CON EL CUAL LOS HILOS SERÁN INICIALIZADOS
