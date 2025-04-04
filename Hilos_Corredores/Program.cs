@@ -19,6 +19,10 @@ namespace Hilos_Corredores
             Thread thread2 = new Thread(() => Tarea(2, 3));
             Thread thread3 = new Thread(() => Tarea(3, 7));
 
+            //Cada Hilo (objeto) inicia su ejecución a través del método "Start()" que invoca al método tarea "Tarea()"
+            thread1.Start();
+            thread2.Start();
+            thread3.Start();
         }
 
         static void Tarea(int id, int iteraciones)//METODO CON EL CUAL LOS HILOS SERÁN INICIALIZADOS
